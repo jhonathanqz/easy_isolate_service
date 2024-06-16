@@ -1,4 +1,4 @@
-library isolate_service;
+library easy_isolate_service;
 
 import 'src/service/isolate_service_impl.dart';
 

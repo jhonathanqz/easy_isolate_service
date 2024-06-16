@@ -1,8 +1,8 @@
-name: isolate_service
+name: easy_isolate_service
 description: A new Flutter package to manage isolate-type functions and facilitate integration.
 version: 1.0.0
-homepage: https://github.com/jhonathanqz/isolate_service
-repository: https://github.com/jhonathanqz/isolate_service
+homepage: https://github.com/jhonathanqz/easy_isolate_service
+repository: https://github.com/jhonathanqz/easy_isolate_service
 
 environment:
   sdk: ">=3.1.5 <4.0.0"
