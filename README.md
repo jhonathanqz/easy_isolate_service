@@ -15,10 +15,26 @@ Package para facilitar o uso e integração de funções com Isolate.
 
 ## :checkered_flag: Como usar?
 
-```bash
-IsolateService.instance.spawn((sendPort) => null);
+Adicione o plugin `easy_isolate_service` em seu arquivo `pubspec.yaml`, localizado na raíz do seu projeto.
 
+```bash
+easy_isolate_service: any
 ```
+
+Após adicionar como dependência do projeto, você pode chamar os diferentes tipos implementados. Exemplo:
+
+```bash
+final result = await IsolateService.instance.spawn<String>((SendPort port){
+final decode = jsonDecode(value);
+port.send(value);
+});
+```
+
+O valor da variável `result` será o resultado da conversão da função `jsonDecode`.
+
+##### E qual a diferença ou qual a vantagem dessa implementação?
+
+Ele fez esse processamento em uma outra thread, assim sem impactar a thread principal do aplicativo, e evitando que o usuário tenha a experiência de "gargalos".
 
 ## :memo: Licença
 

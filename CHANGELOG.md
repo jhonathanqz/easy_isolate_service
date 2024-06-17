@@ -1,3 +1,7 @@
-## 0.0.1
+## 1.0.1
 
-* TODO: Describe initial release.
+- Add check isolates running and block of the five isolates.
+
+## 1.0.0
+
+- First release
